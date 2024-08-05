@@ -1,29 +1,18 @@
 operator= input("Enter the operator[ + ,- , / , * ]: ")
-n=int(input("Enter number of operands to perfrom calculation: "))
-result=[]
-for i in range(n):
-    num=float(input("Enter number: "))
-    result.append(num)
-
+num1=int(input("Enter 1st number: "))
+num2=int(input("Enter 2nd number: "))
+a=0
 if operator == '+':
-    a =0
-    for num in result:
-        a += num
+    a =num1+num2
     print("result: ",a)
 elif operator == '-':
-    a =result[0]
-    for num in result[1:]:
-        a -= num
+    a=num1-num2
     print("result: ",a)
 elif operator == '*':
-    a =1
-    for num in result:
-        a *= num
+    a=num1*num2
     print("result: ",a)
 elif operator == '/':
-    a =result[0]
-    for num in result[1:]:
-        a /= num
+    a=num1/num2
     print("result: ",a)
 else:
     print("invalid operator")
